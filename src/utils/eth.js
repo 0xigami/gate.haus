@@ -10,13 +10,13 @@ export async function signMessage ({ body }) {
     walletconnect: {
       package: WalletConnectProvider,
       options: {
-        infuraId: 'ddf1ca3700f34497bca2bf03607fde38' // don't care about using env vars for this because it will show up in the web site anyway
+        infuraId: 'abcc7c6003a44f58a86a71ae0f8fa3c8' // don't care about using env vars for this because it will show up in the web site anyway
       }
     },
     fortmatic: {
       package: Fortmatic,
       options: {
-        key: 'pk_live_E6E3D8C6CE0F7BC0' // don't care about using env vars for this because it will show up in the web site anyway
+        key: 'pk_live_A14B69C286B8428E' // don't care about using env vars for this because it will show up in the web site anyway
       }
     },
     torus: {
