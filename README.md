@@ -1,6 +1,6 @@
-# NFTClub
+# Gate.Haus
 
-This project lets you create links that only NFT holders can view.  Email support@nftclub.in with any questions.  Also I literally wrote this entire project on a Friday night after my gf fell asleep, so it probably sucks in various ways.  Pull requests welcome!
+This project lets you create links that only NFT holders can view.  
 
 ## Deployment
 
