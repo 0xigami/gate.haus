@@ -21,68 +21,8 @@ const filter = createFilterOptions()
 
 const NFTs = [
   {
-    name: 'Cryptocats (all versions)',
-    address: ['0x9508008227b6b3391959334604677d60169EF540', '0x19c320b43744254ebdBcb1F1BD0e2a3dc08E01dc', '0x088C6Ad962812b5Aa905BA6F3c5c145f9D4C079f', '0xd0e7bc3f1efc5f098534bce73589835b8273b9a0']
-  },
-  {
-    name: 'Original Cryptocats - 0x95',
-    address: ['0x9508008227b6b3391959334604677d60169EF540']
-  },
-  {
-    name: 'Cryptocats V3 - 0x19c',
-    address: ['0x19c320b43744254ebdBcb1F1BD0e2a3dc08E01dc']
-  },
-  {
-    name: 'Official Cryptocats - 0x08',
-    address: ['0x088C6Ad962812b5Aa905BA6F3c5c145f9D4C079f']
-  },
-  {
-    name: 'Wrapped Cryptocats Official',
-    address: ['0xd0e7bc3f1efc5f098534bce73589835b8273b9a0']
-  },
-  {
-    name: 'Hashmasks',
-    address: ['0xc2c747e0f7004f9e8817db2ca4997657a7746928']
-  },
-  {
-    name: 'Wrapped Mooncats',
-    address: ['0x7c40c393dc0f283f318791d746d894ddd3693572']
-  },
-  {
-    name: 'CryptoKitties',
-    address: ['0x06012c8cf97bead5deae237070f9587f8e7a266d']
-  },
-  {
-    name: 'CryptoPunks',
-    address: ['0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb']
-  },
-  {
-    name: 'ROPE',
-    address: ['0xdb68df0e86bc7c6176e6a2255a5365f51113bce8']
-  },
-  {
-    name: 'Ethereum Name Service',
-    address: ['0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85']
-  },
-  {
-    name: 'Unstoppable Domains Animals',
-    address: ['0xd1e5b0ff1287aa9f9a268759062e4ab08b9dacbe']
-  },
-  {
-    name: 'Unstoppable Domains',
-    address: ['0xd1e5b0ff1287aa9f9a268759062e4ab08b9dacbe']
-  },
-  {
-    name: 'Axie Infinity',
-    address: ['0xf5b0a3efb8e8e4c201e2a935f110eaaf3ffecb8d']
-  },
-  {
-    name: 'BASTARD GAN PUNKS V2',
-    address: ['0x31385d3520bced94f77aae104b406994d8f2168c']
-  },
-  {
-    name: 'Urbit IDs',
-    address: ['0x6ac07b7c4601b5ce11de8dfe6335b871c7c4dd4d']
+    name: 'HAUS KEY',
+    address: ['0xAdf9b34B82dE3EF70BB943Db659791F44e65Af4a']
   }
 ]
 
@@ -157,7 +97,7 @@ function App () {
       <header>
         <br />
         <Typography variant='h1' gutterBottom>
-          NFT Club
+          GATE HAUS
         </Typography>
         <Typography variant='h5' gutterBottom>
           Create links that only NFT holders can view
@@ -293,12 +233,6 @@ function App () {
         <br />
         <br />
         <br />
-        <Typography variant='subtitle1'>
-          Need help?  Want us to add your favorite NFT?{'  '}
-          <Link variant='subtitle1' href='mailto:support@nftclub.in'>
-            Email us at support@nftclub.in
-          </Link>
-        </Typography>
       </div>
       <Snackbar
         anchorOrigin={{
