@@ -7,7 +7,7 @@ import Bugsnag from '@bugsnag/js'
 import BugsnagPluginReact from '@bugsnag/plugin-react'
 
 Bugsnag.start({
-  apiKey: '6b2575ca2d4d6da3f85362b248c152b8', // don't care about using env vars for this because it will show up in the web site anyway
+  apiKey: '', // don't care about using env vars for this because it will show up in the web site anyway
   plugins: [new BugsnagPluginReact()]
 })
 
