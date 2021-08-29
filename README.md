@@ -4,16 +4,35 @@ This project lets you create links that only NFT holders can view.
 
 ## Deployment
 
-Requirements: node-v16.8.0, Google Account
+Requirements: node-v16.8.0, Google Firebase
 
 1. The whole project runs on Firebase, so to deploy you would first create a Firebase project.
-2. Go to your project folder and install packages 
+2. Edit src/utils/firebase.js Firebase config
+3. Edit src/utils/eth.js config
+4. Go to your project folder and install packages 
 ```bash
 $ yarn
 ```
-3. 
-
-There are 2 deployment scripts: 1 for frontend and 1 for backend.  Frontend is deploy.sh in the root folder and backend is deploy.sh in the functions folder.
+5. Build frontend 
+```bash
+$ yarn build && firebase deploy --except functions
+```
+6. Go to ./functions folder and install packages
+```bash
+$ yarn
+```
+7. Install Firebase Tools 
+```bash
+$ sudo npm install -g firebase-tools
+```
+8. Set firebase as prefix 
+```bash
+$ alias firebase="`npm config get prefix`/bin/firebase"
+```
+9. Install Firebase backend
+```bash
+$ firebase deploy --only functions 
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
