@@ -4,6 +4,8 @@ This project lets you create links that only NFT holders can view.
 
 ## Deployment
 
+Requirements: node-v16.8.0, Google Account
+
 1. The whole project runs on Firebase, so to deploy you would first create a Firebase project.
 2. Go to your project folder and install packages 
 ```bash
