@@ -34,6 +34,19 @@ $ alias firebase="`npm config get prefix`/bin/firebase"
 $ firebase deploy --only functions 
 ```
 
+## Troubleshooting
+
+###Problem
+```bash
+$ Failed to authenticate, have you run    ?
+```
+###Solution
+The command pop up a new window login with the same id that you used for firebase db ,once logged in it will give you a string copy that string and paste in your terminal.
+```bash
+$ firebase login --no-localhost
+```
+
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
