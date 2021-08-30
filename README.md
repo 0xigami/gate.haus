@@ -9,27 +9,28 @@ Requirements: node-v16.8.0, Google Firebase
 1. The whole project runs on Firebase, so to deploy you would first create a Firebase project.
 2. Edit src/utils/firebase.js Firebase config
 3. Edit src/utils/eth.js config
-4. Go to your project folder and install packages 
+4. Edit .firebaserc add your Firebase project id
+5. Go to your project folder and install packages 
 ```bash
 $ yarn
 ```
-5. Build frontend 
+6. Build frontend 
 ```bash
 $ yarn build && firebase deploy --except functions
 ```
-6. Go to ./functions folder and install packages
+7. Go to ./functions folder and install packages
 ```bash
 $ yarn
 ```
-7. Install Firebase Tools 
+8. Install Firebase Tools 
 ```bash
 $ sudo npm install -g firebase-tools
 ```
-8. Set firebase as prefix 
+9. Set firebase as prefix 
 ```bash
 $ alias firebase="`npm config get prefix`/bin/firebase"
 ```
-9. Install Firebase backend
+10. Install Firebase backend
 ```bash
 $ firebase deploy --only functions 
 ```
