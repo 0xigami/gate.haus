@@ -4,6 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "functions": {
+    "runtime": "nodejs14",
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
