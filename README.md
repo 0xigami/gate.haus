@@ -31,6 +31,7 @@ $ sudo npm install -g firebase-tools
 $ alias firebase="`npm config get prefix`/bin/firebase"
 ```
 10. Set env vars on firebase with the following command. Please use your own bugsnag.com API key for a nodejs project and an Infura ethereum https RPC URL.
+    read more about it: https://firebase.google.com/docs/functions/config-env
 ```bash
 $ firebase functions:config:set bugsnag.apikey="put_a_bugsnag+apikey_here" infura.url="put_your_infura_url_here"
 ```
