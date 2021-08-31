@@ -30,7 +30,11 @@ $ sudo npm install -g firebase-tools
 ```bash
 $ alias firebase="`npm config get prefix`/bin/firebase"
 ```
-10. Install Firebase backend
+10. Set env vars on firebase with the following command. Please use your own bugsnag.com API key for a nodejs project and an Infura ethereum https RPC URL.
+```bash
+$ firebase functions:config:set bugsnag.apikey="put_a_bugsnag+apikey_here" infura.url="put_your_infura_url_here"
+```
+11. Install Firebase backend
 ```bash
 $ firebase deploy --only functions 
 ```
@@ -46,7 +50,15 @@ The command pop up a new window login with the same id that you used for firebas
 ```bash
 $ firebase login --no-localhost
 ```
-
+#### Problem
+```bash
+$ Cannot read property 'apikey' of undefined
+```
+#### Solution
+You need to set 2 env vars. You need a bugsnag.com key for a nodejs project and an infura eth http rpc URL.
+```bash
+$ firebase functions:config:set bugsnag.apikey="put_a_bugsnag+apikey_here" infura.url="put_your_infura_url_here"
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
